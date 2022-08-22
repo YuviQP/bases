@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Personaje } from '../interface/dbz.interface';
+import { DbzService } from '../../services/dbz.service';
 
 
 @Component({
@@ -9,23 +10,12 @@ import { Personaje } from '../interface/dbz.interface';
 
 export class MainPageComponent{
 
-  personajes:Personaje[]=[
-    {
-      nombre:'ABCD',
-      poder:1500,
-    },
-    {
-      nombre:'EGFH',
-      poder:1200,
-    }
-  ]
+
   nuevo:Personaje={
     nombre:'',
     poder:0,
   }
-
-  cambiarNombre(event:any){
-    console.log(event.target.value);
-    }
+  constructor(){
+  }
 
 }

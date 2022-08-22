@@ -5,6 +5,7 @@ import { FormsModule } from '@angular/forms';
 
 import { PersonajesComponent } from './personajes/personajes.component';
 import { AgregarComponent } from './agregar/agregar.component';
+import { DbzService } from '../services/dbz.service';
 
 
 
@@ -21,6 +22,10 @@ import { AgregarComponent } from './agregar/agregar.component';
   exports:[
     MainPageComponent,
     PersonajesComponent,
+  ],
+  //son todod los servicios que se van a exportar
+  providers:[
+  DbzService,
   ]
 })
 export class DbzModule { }

@@ -1,13 +1,14 @@
 <p>DBZ!</p>
 <div class="row">
     <div class="col">
-        <app-personajes [personajes]="personajes">
+        <app-personajes>
         </app-personajes>
         <!--<h3>Personajes</h3>
         <ul *ngFor="let personaje of personajes">
             <li >{{personaje.nombre}}--{{personaje.poder | number}}</li>
         </ul>-->
-        <app-agregar [personajes]="personajes"></app-agregar>
+        <app-agregar [nuevo]="nuevo"
+        ></app-agregar>
     </div>
     <div class="col">
 
